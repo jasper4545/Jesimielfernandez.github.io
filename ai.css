@@ -1,0 +1,136 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "cabin";
+  font-weight: 600;
+  src: url("./Cabin-SemiBold.ttf");
+}
+@font-face{
+  font-family: "josi";
+  src: url("./JosefinSans-Italic-VariableFont_wght.ttf");
+}
+
+body{
+  font-size:1rem;
+  margin:5px;
+  background: linear-gradient(to left, #D90CC0, #F83EE1);
+  color:white;
+}
+.cont{
+  overflow-x: hidden;
+}
+h1{
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top:20px;
+  font-family: "josi";
+  margin-bottom:150px;
+}
+.section{
+  position:relative;
+  font-size: 0.8rem;
+  background: white;
+  color:black;
+  padding:8px;
+  border-radius: 10px;
+  font-family: "cabin";
+  margin-bottom:20px;
+}
+.section1{
+  background-image: url("./ai3.png");
+  background-size: 20% 20%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  animation: 1s alternate-reverse 1 sectL;
+}
+.section2{
+ animation: 1s alternate-reverse 1 sectR;
+  outline:1px solid red;
+}
+.section h2{
+  margin-bottom: 30px;
+}
+.section p{
+  margin-left:20px;
+  text-align: justify;
+  line-height: 20px;
+  margin-bottom:10px;
+}
+.section span{
+  margin-left:20px;
+}
+.section h3{
+  color:red;
+}
+@keyframes sectL{
+  to{transform: translateX(-100%)}
+}
+@keyframes sectR{
+  to{transform: translateX(100%)}
+}
+.ai-list{
+  margin-bottom: 20px;
+ 
+}
+.ai-list h3{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.section3{
+  display:flex;
+  place-items: center;
+  background:#A409FD;
+  position:relative;
+  padding-block: 20px;
+  display:flex;
+  flex-direction:column;
+  gap:0.5rem;
+  color:white;
+}
+.section3 h2{
+  margin-bottom: 10px;
+  font-size:1.1rem;
+  
+}
+#ad-head{
+  font-size:1.3rem;
+}
+.advantage{
+  display:flex;
+  flex-direction: column;
+  position:relative;
+  background: white;
+  padding:10px;
+  border-radius: 10px;
+  transition: all 200ms ease-in;
+  overflow: hidden;
+  width: 90%;
+  color:black;
+}
+.advantage{
+  height:50px;
+}
+.plus{
+  position:absolute;
+  font-size:1.5rem;
+  right: 5%;
+}
+.minus{
+  position:absolute;
+  font-size:1.5rem;
+  right: 5%;
+  top:2%;
+  display: none;
+}
+.advantage p{
+  transform: scale(0);
+  transition: all 500ms ease;
+}
+@media(max-with:500px){
+  .cont{
+    display:none;
+  }
+}
